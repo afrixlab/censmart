@@ -5,6 +5,10 @@ import { theme } from "./theme/theme";
 import Login from "./Login";
 import "./App.scss";
 import Dashboard from "./pages/Dashboard";
+import { BlogList } from "./blog/BlogList";
+import { BlogCreate } from "./blog/BlogCreate";
+import { BlogEdit } from "./blog/BlogEdit";
+import { BlogShow } from "./blog/BlogShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -30,7 +34,15 @@ const App = (): React.ReactElement => {
         theme={theme}
         dashboard={Dashboard}
         loginPage={Login}
-      ></Admin>
+      >
+        <Resource
+          name="Blog"
+          list={BlogList}
+          edit={BlogEdit}
+          create={BlogCreate}
+          show={BlogShow}
+        />
+      </Admin>
     </div>
   );
 };
