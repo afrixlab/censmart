@@ -9,6 +9,14 @@ import { BlogList } from "./blog/BlogList";
 import { BlogCreate } from "./blog/BlogCreate";
 import { BlogEdit } from "./blog/BlogEdit";
 import { BlogShow } from "./blog/BlogShow";
+import { AdminList } from "./admin/AdminList";
+import { AdminCreate } from "./admin/AdminCreate";
+import { AdminEdit } from "./admin/AdminEdit";
+import { AdminShow } from "./admin/AdminShow";
+import { UserList } from "./user/UserList";
+import { UserCreate } from "./user/UserCreate";
+import { UserEdit } from "./user/UserEdit";
+import { UserShow } from "./user/UserShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +49,20 @@ const App = (): React.ReactElement => {
           edit={BlogEdit}
           create={BlogCreate}
           show={BlogShow}
+        />
+        <Resource
+          name="Admin"
+          list={AdminList}
+          edit={AdminEdit}
+          create={AdminCreate}
+          show={AdminShow}
+        />
+        <Resource
+          name="User"
+          list={UserList}
+          edit={UserEdit}
+          create={UserCreate}
+          show={UserShow}
         />
       </Admin>
     </div>

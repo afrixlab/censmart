@@ -9,4 +9,5 @@ export type BlogWhereInput = {
   svg?: JsonFilter;
   category?: StringNullableFilter;
   content?: StringNullableFilter;
+  user?: StringNullableFilter;
 };

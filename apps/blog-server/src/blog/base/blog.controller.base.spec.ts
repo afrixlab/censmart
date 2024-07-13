@@ -25,6 +25,7 @@ const CREATE_INPUT = {
   title: "exampleTitle",
   category: "exampleCategory",
   content: "exampleContent",
+  user: "exampleUser",
 };
 const CREATE_RESULT = {
   id: "exampleId",
@@ -34,6 +35,7 @@ const CREATE_RESULT = {
   title: "exampleTitle",
   category: "exampleCategory",
   content: "exampleContent",
+  user: "exampleUser",
 };
 const FIND_MANY_RESULT = [
   {
@@ -44,6 +46,7 @@ const FIND_MANY_RESULT = [
     title: "exampleTitle",
     category: "exampleCategory",
     content: "exampleContent",
+    user: "exampleUser",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -54,6 +57,7 @@ const FIND_ONE_RESULT = {
   title: "exampleTitle",
   category: "exampleCategory",
   content: "exampleContent",
+  user: "exampleUser",
 };
 
 const service = {

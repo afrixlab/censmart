@@ -84,6 +84,17 @@ class BlogWhereInput {
     nullable: true,
   })
   content?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  user?: StringNullableFilter;
 }
 
 export { BlogWhereInput as BlogWhereInput };

@@ -100,6 +100,18 @@ class Blog {
     nullable: true,
   })
   content!: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @MaxLength(1000)
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  user!: string | null;
 }
 
 export { Blog as Blog };

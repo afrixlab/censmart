@@ -10,6 +10,7 @@ export const BlogEdit = (props: EditProps): React.ReactElement => {
         <div />
         <TextInput label="category" source="category" />
         <TextInput label="content" multiline source="content" />
+        <TextInput label="user" source="user" />
       </SimpleForm>
     </Edit>
   );

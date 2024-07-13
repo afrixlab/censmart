@@ -9,4 +9,5 @@ export type Blog = {
   svg: JsonValue;
   category: string | null;
   content: string | null;
+  user: string | null;
 };

@@ -9,4 +9,5 @@ export type BlogOrderByInput = {
   svg?: SortOrder;
   category?: SortOrder;
   content?: SortOrder;
+  user?: SortOrder;
 };

@@ -39,6 +39,7 @@ export class BlogControllerBase {
         svg: true,
         category: true,
         content: true,
+        user: true,
       },
     });
   }
@@ -59,6 +60,7 @@ export class BlogControllerBase {
         svg: true,
         category: true,
         content: true,
+        user: true,
       },
     });
   }
@@ -80,6 +82,7 @@ export class BlogControllerBase {
         svg: true,
         category: true,
         content: true,
+        user: true,
       },
     });
     if (result === null) {
@@ -110,6 +113,7 @@ export class BlogControllerBase {
           svg: true,
           category: true,
           content: true,
+          user: true,
         },
       });
     } catch (error) {
@@ -140,6 +144,7 @@ export class BlogControllerBase {
           svg: true,
           category: true,
           content: true,
+          user: true,
         },
       });
     } catch (error) {

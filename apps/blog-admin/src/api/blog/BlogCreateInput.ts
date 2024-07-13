@@ -6,4 +6,5 @@ export type BlogCreateInput = {
   svg?: InputJsonValue;
   category?: string | null;
   content?: string | null;
+  user?: string | null;
 };

@@ -20,6 +20,7 @@ export const BlogList = (props: ListProps): React.ReactElement => {
         <TextField label="svg" source="svg" />
         <TextField label="category" source="category" />
         <TextField label="content" source="content" />
+        <TextField label="user" source="user" />
       </Datagrid>
     </List>
   );
